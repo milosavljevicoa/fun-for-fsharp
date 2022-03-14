@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <FscToolPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools</FscToolPath>
+        <FscToolExe>fsc.exe</FscToolExe>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+        <Compile Include="dependencies.fs" />
+        <Compile Include="rop.fs" />
+        <Compile Include="testSql.fs" />
+        <Compile Include="fizz_buzz.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper.FSharp" Version="3.2.0" />
+      <PackageReference Include="FSharp.Data.TypeProviders" Version="5.0.0.6" />
+      <PackageReference Include="SQLProvider" Version="1.2.10" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    </ItemGroup>
+
+</Project>
